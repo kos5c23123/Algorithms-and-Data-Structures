@@ -17,7 +17,7 @@ const Example_4 = [7, 27, 10, 22, 1998, 2000, 1314];
 const merge_shot = (arr) => {
   if (arr.length <= 1) return arr; // return array if array length is equal to 0 or 1
 
-  const [left, right] = split(arr); 
+  const [left, right] = split(arr);
   const left_sorted = merge_shot(left);
   const right_sorted = merge_shot(right);
 
@@ -36,7 +36,8 @@ const merge = (left, right) => {
   let i = 0,
     j = 0;
 
-  while (i < left.length && j < right.length) { // if left and right array have elements
+  while (i < left.length && j < right.length) {
+    // if left and right array have elements
     if (left[i] < right[j]) {
       newArray.push(left[i]);
       i++;
@@ -52,12 +53,12 @@ const merge = (left, right) => {
   }
   while (j < right.length) {
     newArray.push(right[j]);
-    j++
+    j++;
   }
   return newArray;
 };
 
-console.log("Example 1: ", merge_shot(Example_1));
-console.log("Example 2: ", merge_shot(Example_2));
-console.log("Example 3: ", merge_shot(Example_3));
-console.log("Example 4: ", merge_shot(Example_4));
+// console.log("Example 1: ", merge_shot(Example_1));
+// console.log("Example 2: ", merge_shot(Example_2));
+// console.log("Example 3: ", merge_shot(Example_3));
+// console.log("Example 4: ", merge_shot(Example_4));

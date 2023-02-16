@@ -21,7 +21,7 @@ const selection_sort = (arr) => {
   return newArray;
 };
 
-console.log("Example 1: ", selection_sort(Example_1));
-console.log("Example 2: ", selection_sort(Example_2));
-console.log("Example 3: ", selection_sort(Example_3));
-console.log("Example 4: ", selection_sort(Example_4));
+// console.log("Example 1: ", selection_sort(Example_1));
+// console.log("Example 2: ", selection_sort(Example_2));
+// console.log("Example 3: ", selection_sort(Example_3));
+// console.log("Example 4: ", selection_sort(Example_4));

@@ -14,12 +14,12 @@ const Example_4 = [7, 27, 10, 22, 1998, 2000, 1314];
  */
 
 
-const merge_shot = (arr) => {
+const merge_sort = (arr) => {
   if (arr.length <= 1) return arr; // return array if array length is equal to 0 or 1
 
   const [left, right] = split(arr);
-  const left_sorted = merge_shot(left);
-  const right_sorted = merge_shot(right);
+  const left_sorted = merge_sort(left);
+  const right_sorted = merge_sort(right);
 
   return merge(left_sorted, right_sorted);
 };
@@ -58,7 +58,7 @@ const merge = (left, right) => {
   return newArray;
 };
 
-// console.log("Example 1: ", merge_shot(Example_1));
-// console.log("Example 2: ", merge_shot(Example_2));
-// console.log("Example 3: ", merge_shot(Example_3));
-// console.log("Example 4: ", merge_shot(Example_4));
+// console.log("Example 1: ", merge_sort(Example_1));
+// console.log("Example 2: ", merge_sort(Example_2));
+// console.log("Example 3: ", merge_sort(Example_3));
+// console.log("Example 4: ", merge_sort(Example_4));
